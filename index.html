@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gem Guessers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class= "row" id=title>
+        <h1>Gem Guessers</h1>
+    </div>
+
+    <div class= "row" id= inst>
+        <p>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the computer's guess- but you lose the game if your total score goes above the random number!</p>
+        <p>The value of each crystal is hidden from you until you click on it. Each time the game begins, the game will change the values of each crystal.</p>
+    </div>
+
+    <div class= "row">
+        <div class= "col-md-3 colScore" id= "userGuess"></div>
+        <div class= "col-md-3 colScore" id= "winsLosses">
+            <div class= "totWins" id= "totWins">Wins:</div>
+            <div class= "totLosses" id= "totLosses">Losses:</div>
+        </div>
+        <div class= "col-md-3 colScore" id="compGuess"></div>
+    </div>
+
+    <div class= "row">
+        <button class= "button colGem" id= "pinkGem">
+            <img src= "assets/images/pinkGem.jpg" alt= "pinkGem" style= "height: 80px; width: 80px;">
+        </button>
+
+        <button class= "button colGem" id= "blueGem">
+            <img src= "assets/images/blueGem.png" alt= "blueGem" style= "height: 80px; width: 80px;">
+        </button>
+
+        <button class= "button colGem" id= "yellowGem">
+            <img src= "assets/images/yellowGem.jpg" alt= "yellowGem" style= "height: 80px; width: 80px;">
+        </button>
+        
+        <button class= "button colGem" id= "greenGem">
+            <img src= "assets/images/greenGem.jpg" alt= "greenGem" style= "height: 80px; width: 80px;">   
+        </button>
+    </div>
+
+
+
+    <script src="assets/javascript/games.js"></script>
+</body>
+</html>

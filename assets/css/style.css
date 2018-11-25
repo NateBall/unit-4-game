@@ -1,0 +1,66 @@
+.row {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.colScore {
+    border: 2px;
+    border-style: solid;
+    height: 50px;
+    padding: 0;
+    margin: 25px;
+    height: 100px;
+}
+
+#title, #inst {
+    height: 110px;
+}
+
+.button {
+    position: relative;
+    background-color: white;
+    border: none;
+    font-size: 28px;
+    color: blue;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: blue;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+p {
+    text-align: center;
+    color:blue;
+    line-height: 1.5;
+    font-size: 14px;
+    margin-top: 10px;
+}
