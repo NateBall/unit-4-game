@@ -10,41 +10,41 @@
 </head>
 <body>
     
-    <div class= "row" id=title>
-        <h1>Gem Guessers</h1>
+    <div class="row" id="titleHead">
+        <img src="assets/images/newgemmine.PNG" id="titleArt">
     </div>
 
-    <div class= "row" id= inst>
+    <div class="row" id="inst">
         <p>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
         <p>You win the game by matching your total score to the computer's guess- but you lose the game if your total score goes above the random number!</p>
         <p>The value of each crystal is hidden from you until you click on it. Each time the game begins, the game will change the values of each crystal.</p>
     </div>
 
-    <div class= "row">
-        <div class= "col-md-3 colScore" id= "userGuess"></div>
-        <div class= "col-md-3 colScore" id= "winsLosses">
-            <div class= "totWins" id= "totWins">Wins:</div>
-            <div class= "totLosses" id= "totLosses">Losses:</div>
-            <input type="reset" value = "Play Again">
+    <div class= "row" id="scores">
+        <div class="col-md-3 colScore" id="userGuess"></div>
+        <div class="col-md-3 colScore" id="winsLosses">
+            <div class="totWins" id="totWins">Wins: <span class="totalWins"></span></div>
+            <div class="totLosses" id="totLosses">Losses: <span class="totalLosses"></span></div>
+            <input type="reset" class="playAgain" value ="Play Again">
         </div>
-        <div class= "col-md-3 colScore" id="compGuess"></div>
+        <div class="col-md-3 colScore" id="compGuess"></div>
     </div>
 
-    <div class= "row">
-        <button class= "button colGem" id= "pinkGem">
-            <img src= "assets/images/pinkGem.jpg" alt= "pinkGem" style= "height: 80px; width: 80px;">
+    <div class="row" id="gemRow">
+        <button class="button colGem" id="pinkGem">
+            <img src="assets/images/pinkGem.jpg" alt="pinkGem" style="height: 80px; width: 80px;">
         </button>
 
-        <button class= "button colGem" id= "blueGem">
-            <img src= "assets/images/blueGem.png" alt= "blueGem" style= "height: 80px; width: 80px;">
+        <button class="button colGem" id="blueGem">
+            <img src="assets/images/blueGem.png" alt="blueGem" style="height: 80px; width: 80px;">
         </button>
 
-        <button class= "button colGem" id= "yellowGem">
-            <img src= "assets/images/yellowGem.jpg" alt= "yellowGem" style= "height: 80px; width: 80px;">
+        <button class="button colGem" id="yellowGem">
+            <img src="assets/images/yellowGem.jpg" alt="yellowGem" style="height: 80px; width: 80px;">
         </button>
         
-        <button class= "button colGem" id= "greenGem">
-            <img src= "assets/images/greenGem.jpg" alt= "greenGem" style= "height: 80px; width: 80px;">   
+        <button class="button colGem" id="greenGem">
+            <img src="assets/images/greenGem.jpg" alt="greenGem" style="height: 80px; width: 80px;">   
         </button>
     </div>
 

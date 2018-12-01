@@ -17,8 +17,18 @@
     height: 100px;
 }
 
-#title, #inst {
-    height: 110px;
+#titleArt {
+    width: 300px;
+}
+
+#titleHead {
+    height: 150px;
+    background-color: darkmagenta;
+}
+
+#inst {
+    height: 150px;
+    border: none;
 }
 
 .button {
@@ -26,7 +36,7 @@
     background-color: white;
     border: none;
     font-size: 28px;
-    color: blue;
+    color: black;
     padding: 20px;
     width: 200px;
     text-align: center;
@@ -39,7 +49,6 @@
 
 .button:after {
     content: "";
-    background: blue;
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -48,6 +57,26 @@
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
+}
+
+#pinkGem:after {
+    background: pink;
+    color: pink;
+}
+
+#blueGem:after {
+    background: blue;
+    color: blue;
+}
+
+#yellowGem:after{
+    background: yellow;
+    color: yellow;
+}
+
+#greenGem:after {
+    background: green;
+    color: green;
 }
 
 .button:active:after {
@@ -59,8 +88,47 @@
 
 p {
     text-align: center;
-    color:blue;
+    color:darkmagenta;
     line-height: 1.5;
     font-size: 14px;
     margin-top: 10px;
+    font-weight: 1000;
 }
+
+#scores {
+    background-color: rgb(255, 255, 92);
+}
+
+#userGuess {
+    background-color: lightgreen;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 60px;
+    display: inline-block;
+    color: darkgreen;
+}
+
+#compGuess {
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 60px;
+    display: inline-block;
+    color: darkblue;
+}
+
+#gemRow {
+    border: none;
+}
+
+#winsLosses {
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    display: inline-block;
+    background-color: lightcoral;
+}
+
+
